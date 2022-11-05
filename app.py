@@ -86,6 +86,8 @@ def city_page(state,city):
     if city in cities:
         # filter to only use city specific data on page template
         data = pd.read_csv("static/data/childDataLatLong.csv") 
+        cityURL = city.lower()
+        cityURL = cityURL.replace(" ","_")
         city = city.upper()
         city = city.replace("-"," ")
         pageTitle = city.lower()
@@ -107,8 +109,8 @@ def city_page(state,city):
         County = re.sub(r"'.*","" , County)
 
         relatedCities = dataNav.loc[dataNav.Country == f"""{County}"""]
-
-        cityMap = f"""/{city}_map.html"""
+        
+        cityMap = f"""{cityURL}_map.html"""
 
         # render AI blurb
         sentence = pd.read_csv("static/data/sentence.csv")
