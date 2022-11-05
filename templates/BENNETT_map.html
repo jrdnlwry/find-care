@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5827b176c8aff31688f265a54aed0dad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5827b176c8aff31688f265a54aed0dad" ></div>
+        
+</body>
+<script>    
+    
+            var map_5827b176c8aff31688f265a54aed0dad = L.map(
+                "map_5827b176c8aff31688f265a54aed0dad",
+                {
+                    center: [35.56248645, -79.54573480011072],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08c3fbb79ea46065f68642db527b1dba = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5827b176c8aff31688f265a54aed0dad);
+        
+    
+            var marker_a0aa8e0f5779421b5f00e14f86f837a2 = L.marker(
+                [35.56248645, -79.54573480011072],
+                {}
+            ).addTo(map_5827b176c8aff31688f265a54aed0dad);
+        
+    
+            var icon_32b1cf49e176227df7c6ac7b48477097 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a0aa8e0f5779421b5f00e14f86f837a2.setIcon(icon_32b1cf49e176227df7c6ac7b48477097);
+        
+    
+        var popup_9692ca49caa76eb7bae12738dc8a0f79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_747c80a3e27f2f9f88d98ac981c43a19 = $(`<div id="html_747c80a3e27f2f9f88d98ac981c43a19" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_9692ca49caa76eb7bae12738dc8a0f79.setContent(html_747c80a3e27f2f9f88d98ac981c43a19);
+        
+
+        marker_a0aa8e0f5779421b5f00e14f86f837a2.bindPopup(popup_9692ca49caa76eb7bae12738dc8a0f79)
+        ;
+
+        
+    
+    
+            marker_a0aa8e0f5779421b5f00e14f86f837a2.bindTooltip(
+                `<div>
+                     BENNETT PRESCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

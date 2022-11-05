@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_89055e336368aeac19742637eb4d92e4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_89055e336368aeac19742637eb4d92e4" ></div>
+        
+</body>
+<script>    
+    
+            var map_89055e336368aeac19742637eb4d92e4 = L.map(
+                "map_89055e336368aeac19742637eb4d92e4",
+                {
+                    center: [36.099649, -79.530763],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_61fb9c8c93af0babaf06272ef51878ca = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_89055e336368aeac19742637eb4d92e4);
+        
+    
+            var marker_3882f01c72c836399546805e0430436b = L.marker(
+                [36.099649, -79.530763],
+                {}
+            ).addTo(map_89055e336368aeac19742637eb4d92e4);
+        
+    
+            var icon_300276d183ce7c30f1bd56001e8b1d29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3882f01c72c836399546805e0430436b.setIcon(icon_300276d183ce7c30f1bd56001e8b1d29);
+        
+    
+        var popup_d1020887574ca8693e2f8fca0c92a725 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7838336de44bfd83b5a4c4ce3352039f = $(`<div id="html_7838336de44bfd83b5a4c4ce3352039f" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_d1020887574ca8693e2f8fca0c92a725.setContent(html_7838336de44bfd83b5a4c4ce3352039f);
+        
+
+        marker_3882f01c72c836399546805e0430436b.bindPopup(popup_d1020887574ca8693e2f8fca0c92a725)
+        ;
+
+        
+    
+    
+            marker_3882f01c72c836399546805e0430436b.bindTooltip(
+                `<div>
+                     BEGINNING VISION CHILD DEVELOPMENT CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac7420a3c9cb864c5ce7f82261599be3 = L.marker(
+                [36.108799, -79.542799],
+                {}
+            ).addTo(map_89055e336368aeac19742637eb4d92e4);
+        
+    
+            var icon_551dee55da886751ace850484d5c50ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ac7420a3c9cb864c5ce7f82261599be3.setIcon(icon_551dee55da886751ace850484d5c50ce);
+        
+    
+        var popup_c5071808d7bab49ebd2a711f65a85d35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c24bd1824ee71e1b1192b54fafc04b5 = $(`<div id="html_6c24bd1824ee71e1b1192b54fafc04b5" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_c5071808d7bab49ebd2a711f65a85d35.setContent(html_6c24bd1824ee71e1b1192b54fafc04b5);
+        
+
+        marker_ac7420a3c9cb864c5ce7f82261599be3.bindPopup(popup_c5071808d7bab49ebd2a711f65a85d35)
+        ;
+
+        
+    
+    
+            marker_ac7420a3c9cb864c5ce7f82261599be3.bindTooltip(
+                `<div>
+                     GIBSONVILLE ELEMENTARY ACES PROGRAM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43eb74f67646892e54324f8258b22759 = L.marker(
+                [36.108799, -79.542799],
+                {}
+            ).addTo(map_89055e336368aeac19742637eb4d92e4);
+        
+    
+            var icon_2737aa3aa3e6cdfdf65297e79ca13fc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_43eb74f67646892e54324f8258b22759.setIcon(icon_2737aa3aa3e6cdfdf65297e79ca13fc3);
+        
+    
+        var popup_4927a02b3e7abcd361be587b68154624 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c610d2cd3db6a357aeef1f689fa51eb = $(`<div id="html_8c610d2cd3db6a357aeef1f689fa51eb" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_4927a02b3e7abcd361be587b68154624.setContent(html_8c610d2cd3db6a357aeef1f689fa51eb);
+        
+
+        marker_43eb74f67646892e54324f8258b22759.bindPopup(popup_4927a02b3e7abcd361be587b68154624)
+        ;
+
+        
+    
+    
+            marker_43eb74f67646892e54324f8258b22759.bindTooltip(
+                `<div>
+                     GIBSONVILLE ELEMENTARY NC PRE-K PROGRAM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

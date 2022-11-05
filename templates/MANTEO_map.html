@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_73f5d0619db3a3a177f036d6e97509f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_73f5d0619db3a3a177f036d6e97509f3" ></div>
+        
+</body>
+<script>    
+    
+            var map_73f5d0619db3a3a177f036d6e97509f3 = L.map(
+                "map_73f5d0619db3a3a177f036d6e97509f3",
+                {
+                    center: [35.9086305, -75.6712879],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9f5d94f38b6ae12371e85bc659cab98 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_73f5d0619db3a3a177f036d6e97509f3);
+        
+    
+            var marker_d424777f00108056df2c658da23ee957 = L.marker(
+                [35.9086305, -75.6712879],
+                {}
+            ).addTo(map_73f5d0619db3a3a177f036d6e97509f3);
+        
+    
+            var icon_8a195c89c169bff2461c774c6f2bc770 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d424777f00108056df2c658da23ee957.setIcon(icon_8a195c89c169bff2461c774c6f2bc770);
+        
+    
+        var popup_b5d5a4ea2171dfb3e3df2dbc52362624 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6642837a07974225c6c587583e017db9 = $(`<div id="html_6642837a07974225c6c587583e017db9" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_b5d5a4ea2171dfb3e3df2dbc52362624.setContent(html_6642837a07974225c6c587583e017db9);
+        
+
+        marker_d424777f00108056df2c658da23ee957.bindPopup(popup_b5d5a4ea2171dfb3e3df2dbc52362624)
+        ;
+
+        
+    
+    
+            marker_d424777f00108056df2c658da23ee957.bindTooltip(
+                `<div>
+                     DARE COUNTY HEAD START
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7c1756b9c480d8ece653858319179dc = L.marker(
+                [35.913168996477275, -75.67472779626591],
+                {}
+            ).addTo(map_73f5d0619db3a3a177f036d6e97509f3);
+        
+    
+            var icon_c5ba0868a2551af080874da8c9e7cd62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f7c1756b9c480d8ece653858319179dc.setIcon(icon_c5ba0868a2551af080874da8c9e7cd62);
+        
+    
+        var popup_3abdee9d823d2dbb45a61ace35719e73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13ab780815fee8cc68d950784330fd9b = $(`<div id="html_13ab780815fee8cc68d950784330fd9b" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_3abdee9d823d2dbb45a61ace35719e73.setContent(html_13ab780815fee8cc68d950784330fd9b);
+        
+
+        marker_f7c1756b9c480d8ece653858319179dc.bindPopup(popup_3abdee9d823d2dbb45a61ace35719e73)
+        ;
+
+        
+    
+    
+            marker_f7c1756b9c480d8ece653858319179dc.bindTooltip(
+                `<div>
+                     FIRST ASSEMBLY OF GOD MINISTRIES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42bfbe4bfdc1dab5ea3691950ade6d3e = L.marker(
+                [35.915423, -75.675619],
+                {}
+            ).addTo(map_73f5d0619db3a3a177f036d6e97509f3);
+        
+    
+            var icon_f5a27af2885ab1ce27e5109f3fe1c503 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_42bfbe4bfdc1dab5ea3691950ade6d3e.setIcon(icon_f5a27af2885ab1ce27e5109f3fe1c503);
+        
+    
+        var popup_f931ae0449a20430ed1f41175fa16ff1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fd9f99825389705a06ff7167451c788 = $(`<div id="html_0fd9f99825389705a06ff7167451c788" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_f931ae0449a20430ed1f41175fa16ff1.setContent(html_0fd9f99825389705a06ff7167451c788);
+        
+
+        marker_42bfbe4bfdc1dab5ea3691950ade6d3e.bindPopup(popup_f931ae0449a20430ed1f41175fa16ff1)
+        ;
+
+        
+    
+    
+            marker_42bfbe4bfdc1dab5ea3691950ade6d3e.bindTooltip(
+                `<div>
+                     ROANOKE ISLAND PRESBYTERIAN DAY CARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: nav; }
+.item2 { grid-area: header; }
+.item3 { grid-area: padding; }
+.item4 { grid-area: main; }
+.item5 { grid-area: map; }
+.item6 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template:
+  	'nav nav nav nav nav nav'
+    'header header header header header header'
+    'padding main main main map map'
+    'padding footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>A Webpage Template</h1>
+
+<p>You can use the <em>grid-area</em> property to name grid items.</p>
+<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template</em> property on the grid container.</p>
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">nav</div>
+  <div class="item2">Header</div>
+  <div class="item3">Padding</div>
+  <div class="item4">Main</div>  
+  <div class="item5">Map</div>
+  <div class="item6">Footer</div>
+</div>
+
+</body>
+</html>
+

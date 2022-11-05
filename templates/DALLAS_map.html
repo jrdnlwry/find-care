@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_313964034965208f7d5d5e549c7a337a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_313964034965208f7d5d5e549c7a337a" ></div>
+        
+</body>
+<script>    
+    
+            var map_313964034965208f7d5d5e549c7a337a = L.map(
+                "map_313964034965208f7d5d5e549c7a337a",
+                {
+                    center: [35.315815910323074, -81.16262530270426],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_44d3e31a6e28d937ed4bff05b819ebe8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_313964034965208f7d5d5e549c7a337a);
+        
+    
+            var marker_a093aa8157baded99c9488874603b08e = L.marker(
+                [35.315815910323074, -81.16262530270426],
+                {}
+            ).addTo(map_313964034965208f7d5d5e549c7a337a);
+        
+    
+            var icon_0452fa679f2d5a5b22bbc069250fcc7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a093aa8157baded99c9488874603b08e.setIcon(icon_0452fa679f2d5a5b22bbc069250fcc7a);
+        
+    
+        var popup_852f04bfe20b8f9376cfcedbc3b64fba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21388d7114b2d7a98c3db649433fc13b = $(`<div id="html_21388d7114b2d7a98c3db649433fc13b" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_852f04bfe20b8f9376cfcedbc3b64fba.setContent(html_21388d7114b2d7a98c3db649433fc13b);
+        
+
+        marker_a093aa8157baded99c9488874603b08e.bindPopup(popup_852f04bfe20b8f9376cfcedbc3b64fba)
+        ;
+
+        
+    
+    
+            marker_a093aa8157baded99c9488874603b08e.bindTooltip(
+                `<div>
+                     AROUND THE WORLD LEARNING CENTER INC.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44e160a63181c5831e68244d2c216253 = L.marker(
+                [35.31338477053626, -81.15841169013153],
+                {}
+            ).addTo(map_313964034965208f7d5d5e549c7a337a);
+        
+    
+            var icon_7f97cb74e401d23c2a6d999b30ce7a40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_44e160a63181c5831e68244d2c216253.setIcon(icon_7f97cb74e401d23c2a6d999b30ce7a40);
+        
+    
+        var popup_417373fbedb1357100a26ce224c26cbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe86f987597a450e6b70a32732b9251d = $(`<div id="html_fe86f987597a450e6b70a32732b9251d" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_417373fbedb1357100a26ce224c26cbe.setContent(html_fe86f987597a450e6b70a32732b9251d);
+        
+
+        marker_44e160a63181c5831e68244d2c216253.bindPopup(popup_417373fbedb1357100a26ce224c26cbe)
+        ;
+
+        
+    
+    
+            marker_44e160a63181c5831e68244d2c216253.bindTooltip(
+                `<div>
+                     ASSEMBLY OF FAITH CHRISTIAN CHILDCARE CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc21c0818b9e58ebf34b3992582cae2d = L.marker(
+                [35.316129, -81.166993],
+                {}
+            ).addTo(map_313964034965208f7d5d5e549c7a337a);
+        
+    
+            var icon_2395fdb00f85352afbb76b98c41895d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cc21c0818b9e58ebf34b3992582cae2d.setIcon(icon_2395fdb00f85352afbb76b98c41895d3);
+        
+    
+        var popup_16b5cca202325b629720657456928f1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_457f597953c7bfadfa1949651d4a196e = $(`<div id="html_457f597953c7bfadfa1949651d4a196e" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_16b5cca202325b629720657456928f1a.setContent(html_457f597953c7bfadfa1949651d4a196e);
+        
+
+        marker_cc21c0818b9e58ebf34b3992582cae2d.bindPopup(popup_16b5cca202325b629720657456928f1a)
+        ;
+
+        
+    
+    
+            marker_cc21c0818b9e58ebf34b3992582cae2d.bindTooltip(
+                `<div>
+                     CLINE LEARNING CENTER OF DALLAS # IV
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

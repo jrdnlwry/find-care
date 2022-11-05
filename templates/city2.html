@@ -1,0 +1,279 @@
+<!--FINISH THIS IN CODE PEN -->
+
+<style>
+/*Testing out city.html CSS */
+
+/* childcare card */
+ 
+#main{
+      float:left;
+      width:70%;
+      padding:0 30px;
+      box-sizing: border-box;
+  }
+  
+  /*Child Care Results Card*/
+  
+  .item4{
+    border:1px #ccc solid;
+    padding:10px;
+    /* gives the border rounder corners */
+    border-radius:15px;
+    list-style:none;
+    width: 550px;
+    text-align: left;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 10px #888888;
+  }
+  
+  /* map settings */
+  .item5{
+    /* gives the border rounder corners */
+    width: auto;
+    max-height: 50px;
+  }
+  
+  
+  #block {
+      float:left;
+      width:33.3%;
+      border:1px solid #ccc;
+      /* box sizing takes in border & padding to determine width */
+      box-sizing:border-box;
+      border-radius:15px;
+      text-align: center;
+      height: 20px;
+  }
+  
+  .type{
+      background-color: #797DD6;
+      font-weight: 500;
+      color: #fff;
+  }
+  
+  .license{
+      background-color: #D6D279;
+      font-weight: 500;
+      color: #fff;
+  }
+  
+  .subsidized{
+      background-color: #D6797D;
+      font-weight: 500;
+      color: #fff;
+  }
+  
+  .relatedCity{
+    text-align: left;
+  
+  }
+
+
+
+
+
+  #mainNav .a{
+    display: inline;
+  }
+#pageFooter{
+    background: #5E35B1;
+    color:#fff;
+    text-align: center;
+    padding: 0px;
+    margin-top: 40px;
+    width: 100%;
+}
+.pageHeader .siteTitle{
+    background-color: #5E35B1;
+}
+
+/*footer nav styling */
+
+#pageFooter .container{
+    background-color:#5E35B1;
+    width: 100%;
+}
+#pageFooter .container ul{
+    padding:0;
+    list-style:none;
+}
+
+#pageFooter .container li{
+    display:inline;
+}
+
+#pageFooter .container a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+}
+/* navigation styling */
+#navbar{
+    background-color:#5E35B1;
+    color:#fff;
+    width: 100%;
+}
+
+#navbar ul{
+    padding:0;
+    list-style:none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+}
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 50% 30%;
+  grid-row-gap: 100px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+footer, article, nav, div {
+  padding: 1.2em;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "nav"
+      "ads"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+ /* map div */
+ 
+ .item5{
+  width: auto;
+  max-height: auto;
+ }
+
+ /* resize card div for mobile */
+ .item4{
+
+  width: 350px;
+ }
+
+ #block {display: none;
+}
+  
+
+}
+</style>
+
+<!doctype html>
+<html>
+
+  <head>
+    <title>{{titleTag}}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+
+<body>
+  <header id="pageHeader">
+      <nav id="navbar">
+          <div class="container">
+              <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Sales</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+  <!--- Attempt to add a heading section-->
+  <article id="mainArticle">
+    <h1>
+      {{titleTag}}
+    </h1>
+    <hr>
+    <div class="container">
+      <section id="main">
+        <div class="item4">
+          <ol>
+              {% for index, row in dataSource.iterrows() %}
+              <br>
+              <div class="card">
+                <div class="attributes">
+                  <p id="block" class="type">{{ row['Type'] }}</p> <p id="block" class="license">License #: {{ row['License'] }}</p> 
+                  <p id="block" class="subsidized">Subsidized: {{ row['Enrolled in subsidized program'] }}</p>
+                </div>
+                  <li><b>{{ row['Name'] }}</b></li>
+                  <p> {{ row['Street'] }}</p>
+                  <p> {{ row['City'] }}, {{ row['State'] }} {{ row['Zip'] }}</p>
+                  <p> ph: {{ row['Phone'] }} | email: {{ row['Email']}}</p>
+              </div>
+              <br>
+              <hr>
+              {% endfor %}
+          </ol>
+        </div>
+
+
+</article>
+  <nav id="mainNav">
+    <div class="item3">
+      <h4 id="relatedCity">Nearby Cities in {{ County }} Co.</h4>
+      {% for index, row in relatedCities.iterrows() %}
+        <a href="/{{ row['State'].lower() }}/{{ row['City'].lower().replace(' ','-') }}">{{ row['City'] }}</a>
+      <br>
+      {% endfor %}  
+    </div>
+    <br>
+  </nav>
+  <div id="siteAds">
+    <div class="item5">
+      {% block body %}
+        {% include  cityMap %}
+      {% endblock %} 
+    </div>
+  </div>
+  <footer id="pageFooter">
+    <div class="container">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p>Copyright &copy; 2022 My Website</p>
+    </div>
+  </footer>
+</body>

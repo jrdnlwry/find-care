@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a09bbdaa47ebac3034ce9981b9bfc9f2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a09bbdaa47ebac3034ce9981b9bfc9f2" ></div>
+        
+</body>
+<script>    
+    
+            var map_a09bbdaa47ebac3034ce9981b9bfc9f2 = L.map(
+                "map_a09bbdaa47ebac3034ce9981b9bfc9f2",
+                {
+                    center: [35.2819706, -78.91761959782755],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_64e679ed916e556d60d1eb2388e11773 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a09bbdaa47ebac3034ce9981b9bfc9f2);
+        
+    
+            var marker_8a92616c25d71845779ac38de60f0ea3 = L.marker(
+                [35.2819706, -78.91761959782755],
+                {}
+            ).addTo(map_a09bbdaa47ebac3034ce9981b9bfc9f2);
+        
+    
+            var icon_711a59daba7571f2703ea47adac32912 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8a92616c25d71845779ac38de60f0ea3.setIcon(icon_711a59daba7571f2703ea47adac32912);
+        
+    
+        var popup_0ba49ab8a88aae8eb493b489e40349f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cf390d6f18ab4ce6f111ce021f6eca3 = $(`<div id="html_4cf390d6f18ab4ce6f111ce021f6eca3" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_0ba49ab8a88aae8eb493b489e40349f4.setContent(html_4cf390d6f18ab4ce6f111ce021f6eca3);
+        
+
+        marker_8a92616c25d71845779ac38de60f0ea3.bindPopup(popup_0ba49ab8a88aae8eb493b489e40349f4)
+        ;
+
+        
+    
+    
+            marker_8a92616c25d71845779ac38de60f0ea3.bindTooltip(
+                `<div>
+                     ANDERSON CREEK PRIMARY SCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15e33f3fb06c6bfe3f71e1855d299484 = L.marker(
+                [35.2819706, -78.91761959782755],
+                {}
+            ).addTo(map_a09bbdaa47ebac3034ce9981b9bfc9f2);
+        
+    
+            var icon_3cfaf071c5cc9aba1821e1b062d990f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_15e33f3fb06c6bfe3f71e1855d299484.setIcon(icon_3cfaf071c5cc9aba1821e1b062d990f4);
+        
+    
+        var popup_4551b411a5961271532dd34fe0f06336 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a5a9bddc4f548b55f38b53445d749f8 = $(`<div id="html_2a5a9bddc4f548b55f38b53445d749f8" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_4551b411a5961271532dd34fe0f06336.setContent(html_2a5a9bddc4f548b55f38b53445d749f8);
+        
+
+        marker_15e33f3fb06c6bfe3f71e1855d299484.bindPopup(popup_4551b411a5961271532dd34fe0f06336)
+        ;
+
+        
+    
+    
+            marker_15e33f3fb06c6bfe3f71e1855d299484.bindTooltip(
+                `<div>
+                     ANDERSON CREEK PRIMARY SCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6378071f0a09b48d7793f6e23ed797ba = L.marker(
+                [35.2819706, -78.91761959782755],
+                {}
+            ).addTo(map_a09bbdaa47ebac3034ce9981b9bfc9f2);
+        
+    
+            var icon_e89ed2d779893e69a496039879c86952 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6378071f0a09b48d7793f6e23ed797ba.setIcon(icon_e89ed2d779893e69a496039879c86952);
+        
+    
+        var popup_3c6ee3da89341a3ed93aa985c6ae90b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f183005e10e635de6fcb64961b9547ba = $(`<div id="html_f183005e10e635de6fcb64961b9547ba" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_3c6ee3da89341a3ed93aa985c6ae90b8.setContent(html_f183005e10e635de6fcb64961b9547ba);
+        
+
+        marker_6378071f0a09b48d7793f6e23ed797ba.bindPopup(popup_3c6ee3da89341a3ed93aa985c6ae90b8)
+        ;
+
+        
+    
+    
+            marker_6378071f0a09b48d7793f6e23ed797ba.bindTooltip(
+                `<div>
+                     ANDERSON CREEK PRIMARY SCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_356655381cb17cdb0e6677118e933888 = L.marker(
+                [35.2819706, -78.91761959782755],
+                {}
+            ).addTo(map_a09bbdaa47ebac3034ce9981b9bfc9f2);
+        
+    
+            var icon_700c5aaa6ee39afc0ad5b45b5ae9e0df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_356655381cb17cdb0e6677118e933888.setIcon(icon_700c5aaa6ee39afc0ad5b45b5ae9e0df);
+        
+    
+        var popup_353081012e1668b7715a09bdcfe6c216 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09213f20a0116c7f61d992885a995741 = $(`<div id="html_09213f20a0116c7f61d992885a995741" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_353081012e1668b7715a09bdcfe6c216.setContent(html_09213f20a0116c7f61d992885a995741);
+        
+
+        marker_356655381cb17cdb0e6677118e933888.bindPopup(popup_353081012e1668b7715a09bdcfe6c216)
+        ;
+
+        
+    
+    
+            marker_356655381cb17cdb0e6677118e933888.bindTooltip(
+                `<div>
+                     ANDERSON CREEK PRIMARY SCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

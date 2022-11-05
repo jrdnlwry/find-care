@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/baby-favicon.png"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <!-- Title -->
+    <title>Find Child Care, Daycare, Preschool &amp; More - Baby Book</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div href="#" class="header-logo">
+        <i class="fas fa-baby"></i>
+        <a href="#" class="header-logo-text">Baby Book</a>
+      </div>
+      <nav class="header-navbar">
+        <a href="/" class="header-nav-link current">Home</a>
+        <a href="#" class="header-nav-link">About</a>
+        <a href="#" class="header-nav-link">Contact</a>
+        <a href="#" class="header-nav-link">Sales</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Browse-Child-Care -->
+      <div class="container">
+        <section class="browse">
+          <h2 class="browse-title">Browse Child Care by County/State</h2>
+          <div class="browse-cards">
+            {% for i in datasource.items() %}  
+            <div class="browse-card">
+                <!-- Call City/County data source -->
+              <div class="browse-show">
+                <i class="fas fa-city"></i>
+                <!-- Return COUNTY Results-->
+                <h3 class="browse-show-title">{{i[0]}}</h3><!-- COUNTY HERE -->
+              </div>
+              <div class="browse-list"> <!-- CITY HERE -->
+                  {% for x in i[1] %}
+                      <a href= "{{ '/nc/' + x.lower()|replace(' ', '-')}}">{{ x.lower() }}</a>
+                  {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+          </div>
+        </section>
+      </div>
+  </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-links">
+              <a href="/" class="footer-link">Home</a>
+              <a href="#" class="footer-link">Terms</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="/index" class="footer-link">County Search</a>
+            </div>
+            <p class="footer-logo">Copyright &copy; 2022 Baby Book</p>
+          </div>
+        </div>
+      </footer>  
+      <script>
+        //FAQ
+        let question = document.querySelectorAll('.browse-show');
+  
+        question.forEach(question => {
+          question.addEventListener('click', event => {
+            const active = document.querySelector('.browse-show.active');
+            if (active && active !== question) {
+              active.classList.toggle('active');
+              active.nextElementSibling.style.maxHeight = 0;
+            }
+            question.classList.toggle('active');
+            const answer = question.nextElementSibling;
+            if (question.classList.contains('active')) {
+              answer.style.maxHeight = answer.scrollHeight + 'px';
+            } else {
+              answer.style.maxHeight = 0;
+            }
+          });
+        });
+      </script>
+    </body>
+  </html>

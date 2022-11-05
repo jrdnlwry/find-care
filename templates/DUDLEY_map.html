@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_94cf60c56e48c2cafa6946b2d1ca6b20 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_94cf60c56e48c2cafa6946b2d1ca6b20" ></div>
+        
+</body>
+<script>    
+    
+            var map_94cf60c56e48c2cafa6946b2d1ca6b20 = L.map(
+                "map_94cf60c56e48c2cafa6946b2d1ca6b20",
+                {
+                    center: [35.2707059, -78.0371043],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0f5d5adde783374c16ebf2bcf7d1aced = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_94cf60c56e48c2cafa6946b2d1ca6b20);
+        
+    
+            var marker_16414a2680401548fe418eb05c55f1fd = L.marker(
+                [35.2707059, -78.0371043],
+                {}
+            ).addTo(map_94cf60c56e48c2cafa6946b2d1ca6b20);
+        
+    
+            var icon_799610f142f75c7d1b25a163d537450d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_16414a2680401548fe418eb05c55f1fd.setIcon(icon_799610f142f75c7d1b25a163d537450d);
+        
+    
+        var popup_b7d6ced48523f4a35fb33377ded154c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_670942cc1e37ade72a997399b98d2fc5 = $(`<div id="html_670942cc1e37ade72a997399b98d2fc5" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_b7d6ced48523f4a35fb33377ded154c8.setContent(html_670942cc1e37ade72a997399b98d2fc5);
+        
+
+        marker_16414a2680401548fe418eb05c55f1fd.bindPopup(popup_b7d6ced48523f4a35fb33377ded154c8)
+        ;
+
+        
+    
+    
+            marker_16414a2680401548fe418eb05c55f1fd.bindTooltip(
+                `<div>
+                     BROGDEN PRIMARY SCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b01a266d3f8779b0ac63e4849b931449 = L.marker(
+                [35.2676524185349, -78.0362360080544],
+                {}
+            ).addTo(map_94cf60c56e48c2cafa6946b2d1ca6b20);
+        
+    
+            var icon_131605b7b0eb34669d00aef23bb1afdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b01a266d3f8779b0ac63e4849b931449.setIcon(icon_131605b7b0eb34669d00aef23bb1afdf);
+        
+    
+        var popup_633164c94e7d0236810ed5c00e8c1238 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c131783df46ce5ddfed1cc9d9c87ba6e = $(`<div id="html_c131783df46ce5ddfed1cc9d9c87ba6e" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_633164c94e7d0236810ed5c00e8c1238.setContent(html_c131783df46ce5ddfed1cc9d9c87ba6e);
+        
+
+        marker_b01a266d3f8779b0ac63e4849b931449.bindPopup(popup_633164c94e7d0236810ed5c00e8c1238)
+        ;
+
+        
+    
+    
+            marker_b01a266d3f8779b0ac63e4849b931449.bindTooltip(
+                `<div>
+                     WAGES STEPHEN & SUSAN PARR FAMILY LEARNING CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

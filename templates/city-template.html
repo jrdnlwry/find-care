@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../static/images/baby-favicon.png"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <!-- Title -->
+    <title>Find Child Care, Daycare, Preschool &amp; More - Baby Book</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div href="#" class="header-logo">
+        <i class="fas fa-baby"></i>
+        <a href="/" class="header-logo-text">Baby Book</a>
+      </div>
+      <nav class="header-navbar">
+        <a href="/" class="header-nav-link current">Home</a>
+        <a href="#" class="header-nav-link">About</a>
+        <a href="#" class="header-nav-link">Contact</a>
+        <a href="#" class="header-nav-link">Sales</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="city-map">
+        <div class="city-map-grid">
+          <!-- ----------Side panel---------- -->
+          <div class="city-map-city">
+            <h2 class="city-map-city-title">
+              {{ titleTag }}
+            </h2>
+
+            <div class="city-map-city-cards">
+              <div class="city-map-city-card">
+                {% for index, row in dataSource.iterrows() %}
+                <span class="city-map-city-card-no"></span>
+                <div class="city-map-city-card-img">
+                  <!-- <img src="../static/images/child-care-card.jpg" alt="Child Care" /> -->
+                  <img src="..{{ row['ImageFile'] }}" alt="Child Care" />
+                </div>
+                <div class="city-map-city-card-text">
+                  <!-- NAME OF FACILITY -->
+                  <h3 class="city-map-city-card-text-title">
+                    {{ row['Name'] }}
+                  </h3>
+                  <div class="city-map-city-card-tags">
+                    <!-- TYPE OF FACILITY -->
+                    <span class="city-map-city-card-tag"
+                      >{{ row['Type'] }}</span
+                    >
+                    <!-- LICENSE NUMBER -->
+                    <span class="city-map-city-card-tag"
+                      >License #: {{ row['License'] }}</span
+                    >
+                    <!-- SUBSIDIZED TAG -->
+                    <span class="city-map-city-card-tag">Subsidized: {{ row['subsidized'] }}</span>
+                  </div>
+                  <!-- ADDRESS TAG -->
+                  <p class="city-map-city-card-text-address">
+                    {{ row['Street'] }}, {{ row['City'] }}, {{ row['State'] }} {{ row['Zip'] }}
+                  </p>
+                  <!-- CONTACT INFO -->
+                  <ul class="city-map-city-card-text-contact">
+                    <li class="city-map-city-card-text-phone">
+                      <i class="fas fa-phone"></i>
+                      <span class="city-map-city-card-text-phone-text"
+                        >{{ row['Phone'] }}</span
+                      >
+                    </li>
+                    <li class="city-map-city-card-text-email">
+                      <i class="fas fa-envelope"></i>
+                      <span class="city-map-city-card-text-email-text"
+                        >{{ row['Email'] }}</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Map ----------------------->
+          <div class="city-map-map">
+            <iframe
+              src="https://ithaca-map.netlify.app/"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="content">
+        
+          <h2 class="content-title">FAQs for finding daycares in {{ city }}</h2>
+      {% for index, row in sentence.iterrows() %}          
+          <p>{{ row['Sentence'] }}</p>
+      {% endfor %}
+          <h3>What type of childcare can I find in {{ city }}, NC?</h3>
+          <p>There are approximately {{ allCenters }} licensed childcare facilities in {{ city }}, NC. Of those {{ familyCare }} are classified as Family Child Care facilities and {{ childCare }} are Child Care Centers.</p>
+          <p>A Family Child Care home is a child care arrangement located in a residence where, at any one time, more than two but less than nine children, receive child care</p>
+          <p>Whereas a child care center cares for larger groups of children in a facility outside of a private home.</p>
+          <p>Of those {{ allCenters }} licensed childcare facilities {{ enrolled }} of them are enrolled in a subsidized program.</p>
+          <h3>How to find childcare in {{ city }}, NC?</h3>
+          <p>Daycare facilities can fill up quickly and have long waiting periods. If you're expecting you need to begin your childcare search several months in advance of when you actually need care.</p>
+          <p>Browse our listing of daycare facilities, view their services and contact them through the website to request an appointment today.</p>
+          
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="cities">
+          <h2 class="cities-title">Nearby Cities in {{ County }} Co.</h2>
+          <ul class="cities-list">
+            {% for index, row in relatedCities.iterrows() %}
+            <li class="cities-list-item">
+              <a href="/{{ row['State'].lower() }}/{{ row['City'].lower().replace(' ','-') }}" class="cities-list-item-link">{{ row['City'] }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="/" class="footer-link">Home</a>
+            <a href="#" class="footer-link">Terms</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="/index" class="footer-link">County Search</a>
+          </div>
+          <p class="footer-logo">Copyright &copy; 2022 Baby Book</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

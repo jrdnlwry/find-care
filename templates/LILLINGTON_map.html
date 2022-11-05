@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_393ea5b7ba24a74dc5a8cef8ff88ab2b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_393ea5b7ba24a74dc5a8cef8ff88ab2b" ></div>
+        
+</body>
+<script>    
+    
+            var map_393ea5b7ba24a74dc5a8cef8ff88ab2b = L.map(
+                "map_393ea5b7ba24a74dc5a8cef8ff88ab2b",
+                {
+                    center: [35.39440407696853, -78.82225986837604],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c5f05b8cead2e3a23dcdf31106addfd1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_393ea5b7ba24a74dc5a8cef8ff88ab2b);
+        
+    
+            var marker_b8f1fca39319c4a5252b157f8d76bd0c = L.marker(
+                [35.39440407696853, -78.82225986837604],
+                {}
+            ).addTo(map_393ea5b7ba24a74dc5a8cef8ff88ab2b);
+        
+    
+            var icon_01845a7c689a10130a926460f6565a58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b8f1fca39319c4a5252b157f8d76bd0c.setIcon(icon_01845a7c689a10130a926460f6565a58);
+        
+    
+        var popup_821429426285cb2331dd4dab0e46ef31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50716aec39d9d87933739987efcaa2b9 = $(`<div id="html_50716aec39d9d87933739987efcaa2b9" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_821429426285cb2331dd4dab0e46ef31.setContent(html_50716aec39d9d87933739987efcaa2b9);
+        
+
+        marker_b8f1fca39319c4a5252b157f8d76bd0c.bindPopup(popup_821429426285cb2331dd4dab0e46ef31)
+        ;
+
+        
+    
+    
+            marker_b8f1fca39319c4a5252b157f8d76bd0c.bindTooltip(
+                `<div>
+                     KIDDS PLACE CDC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_787d036e55da0479705a940b94e25925 = L.marker(
+                [35.39440407696853, -78.82225986837604],
+                {}
+            ).addTo(map_393ea5b7ba24a74dc5a8cef8ff88ab2b);
+        
+    
+            var icon_dd749198d26965bc348c0463e2bbd1ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_787d036e55da0479705a940b94e25925.setIcon(icon_dd749198d26965bc348c0463e2bbd1ce);
+        
+    
+        var popup_5088423128c2ff03bc98dbbf56c7b309 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2096c38a24695bf9601717c2df5eda7a = $(`<div id="html_2096c38a24695bf9601717c2df5eda7a" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_5088423128c2ff03bc98dbbf56c7b309.setContent(html_2096c38a24695bf9601717c2df5eda7a);
+        
+
+        marker_787d036e55da0479705a940b94e25925.bindPopup(popup_5088423128c2ff03bc98dbbf56c7b309)
+        ;
+
+        
+    
+    
+            marker_787d036e55da0479705a940b94e25925.bindTooltip(
+                `<div>
+                     KIDDS PLACE CDC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de626580c68f3b749d875670e8bfe81e = L.marker(
+                [35.390196, -78.826858],
+                {}
+            ).addTo(map_393ea5b7ba24a74dc5a8cef8ff88ab2b);
+        
+    
+            var icon_c5f16bd17a506a9bae01b9ba380d9f75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_de626580c68f3b749d875670e8bfe81e.setIcon(icon_c5f16bd17a506a9bae01b9ba380d9f75);
+        
+    
+        var popup_2e7dd66b16c07f5cdf71d5956f03b411 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28db6f7364aec835281074ee5de3b18e = $(`<div id="html_28db6f7364aec835281074ee5de3b18e" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_2e7dd66b16c07f5cdf71d5956f03b411.setContent(html_28db6f7364aec835281074ee5de3b18e);
+        
+
+        marker_de626580c68f3b749d875670e8bfe81e.bindPopup(popup_2e7dd66b16c07f5cdf71d5956f03b411)
+        ;
+
+        
+    
+    
+            marker_de626580c68f3b749d875670e8bfe81e.bindTooltip(
+                `<div>
+                     THE SHIRLEY WHITLEY CDC, H.S./EARLY HEAD START
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a59eb37debe1a6d5ce5609336cb9ea7 = L.marker(
+                [35.390196, -78.826858],
+                {}
+            ).addTo(map_393ea5b7ba24a74dc5a8cef8ff88ab2b);
+        
+    
+            var icon_4e844227fe07356f15f250cea59da1f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3a59eb37debe1a6d5ce5609336cb9ea7.setIcon(icon_4e844227fe07356f15f250cea59da1f7);
+        
+    
+        var popup_61b70c26362f2819f7a14a3f86906c5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb5163ed6995c6232cade3ef657030a2 = $(`<div id="html_cb5163ed6995c6232cade3ef657030a2" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_61b70c26362f2819f7a14a3f86906c5e.setContent(html_cb5163ed6995c6232cade3ef657030a2);
+        
+
+        marker_3a59eb37debe1a6d5ce5609336cb9ea7.bindPopup(popup_61b70c26362f2819f7a14a3f86906c5e)
+        ;
+
+        
+    
+    
+            marker_3a59eb37debe1a6d5ce5609336cb9ea7.bindTooltip(
+                `<div>
+                     THE SHIRLEY WHITLEY CDC, H.S./EARLY HEAD START
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d793d0a662a6a22ff91496f5cea88327 = L.marker(
+                [35.39440407696853, -78.82225986837604],
+                {}
+            ).addTo(map_393ea5b7ba24a74dc5a8cef8ff88ab2b);
+        
+    
+            var icon_d88388f71c84483a776279c22b0eb206 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d793d0a662a6a22ff91496f5cea88327.setIcon(icon_d88388f71c84483a776279c22b0eb206);
+        
+    
+        var popup_a4f20872a295d159e56acf5e820cd5ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ba94f15bb1e10c7d3565fd4330365b5 = $(`<div id="html_1ba94f15bb1e10c7d3565fd4330365b5" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_a4f20872a295d159e56acf5e820cd5ad.setContent(html_1ba94f15bb1e10c7d3565fd4330365b5);
+        
+
+        marker_d793d0a662a6a22ff91496f5cea88327.bindPopup(popup_a4f20872a295d159e56acf5e820cd5ad)
+        ;
+
+        
+    
+    
+            marker_d793d0a662a6a22ff91496f5cea88327.bindTooltip(
+                `<div>
+                     KIDDS PLACE CDC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33bda6c99ebd44ea5985ac7a17eb2eef = L.marker(
+                [35.39440407696853, -78.82225986837604],
+                {}
+            ).addTo(map_393ea5b7ba24a74dc5a8cef8ff88ab2b);
+        
+    
+            var icon_fb9953e25bd3adfc93d7806e82a9465a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_33bda6c99ebd44ea5985ac7a17eb2eef.setIcon(icon_fb9953e25bd3adfc93d7806e82a9465a);
+        
+    
+        var popup_3ca93aa2df2e0a1b423696b2419eeddd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4955d61b4a3ee0fe296ee5e980215615 = $(`<div id="html_4955d61b4a3ee0fe296ee5e980215615" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_3ca93aa2df2e0a1b423696b2419eeddd.setContent(html_4955d61b4a3ee0fe296ee5e980215615);
+        
+
+        marker_33bda6c99ebd44ea5985ac7a17eb2eef.bindPopup(popup_3ca93aa2df2e0a1b423696b2419eeddd)
+        ;
+
+        
+    
+    
+            marker_33bda6c99ebd44ea5985ac7a17eb2eef.bindTooltip(
+                `<div>
+                     KIDDS PLACE CDC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34e74f11f3290d074d130a182b445a34 = L.marker(
+                [35.390196, -78.826858],
+                {}
+            ).addTo(map_393ea5b7ba24a74dc5a8cef8ff88ab2b);
+        
+    
+            var icon_b2e5eaeab0b1784289c11763a0fbf5db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_34e74f11f3290d074d130a182b445a34.setIcon(icon_b2e5eaeab0b1784289c11763a0fbf5db);
+        
+    
+        var popup_fcdf62ddd6dbb3f0e5094ab1f2e579a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5ed8c9fc139120beb791f55b92ac177 = $(`<div id="html_f5ed8c9fc139120beb791f55b92ac177" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_fcdf62ddd6dbb3f0e5094ab1f2e579a2.setContent(html_f5ed8c9fc139120beb791f55b92ac177);
+        
+
+        marker_34e74f11f3290d074d130a182b445a34.bindPopup(popup_fcdf62ddd6dbb3f0e5094ab1f2e579a2)
+        ;
+
+        
+    
+    
+            marker_34e74f11f3290d074d130a182b445a34.bindTooltip(
+                `<div>
+                     THE SHIRLEY WHITLEY CDC, H.S./EARLY HEAD START
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79e2705111ab675ee1a069900af680aa = L.marker(
+                [35.390196, -78.826858],
+                {}
+            ).addTo(map_393ea5b7ba24a74dc5a8cef8ff88ab2b);
+        
+    
+            var icon_d3a021073a97346961b4b1fad822b87e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_79e2705111ab675ee1a069900af680aa.setIcon(icon_d3a021073a97346961b4b1fad822b87e);
+        
+    
+        var popup_e8c7e96f3c61064ee7f5ba46fbbd83d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93842e1b4b38aa0ba647f6c7a228fa1b = $(`<div id="html_93842e1b4b38aa0ba647f6c7a228fa1b" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_e8c7e96f3c61064ee7f5ba46fbbd83d6.setContent(html_93842e1b4b38aa0ba647f6c7a228fa1b);
+        
+
+        marker_79e2705111ab675ee1a069900af680aa.bindPopup(popup_e8c7e96f3c61064ee7f5ba46fbbd83d6)
+        ;
+
+        
+    
+    
+            marker_79e2705111ab675ee1a069900af680aa.bindTooltip(
+                `<div>
+                     THE SHIRLEY WHITLEY CDC, H.S./EARLY HEAD START
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

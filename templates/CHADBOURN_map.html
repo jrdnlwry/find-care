@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d42d71a0bec1c79959bbe79ddd58897d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d42d71a0bec1c79959bbe79ddd58897d" ></div>
+        
+</body>
+<script>    
+    
+            var map_d42d71a0bec1c79959bbe79ddd58897d = L.map(
+                "map_d42d71a0bec1c79959bbe79ddd58897d",
+                {
+                    center: [34.3174259, -78.8383233],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f8296d90edee8e61fa847476afc1b1a0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d42d71a0bec1c79959bbe79ddd58897d);
+        
+    
+            var marker_81267603142dc1e47548c6523d59d220 = L.marker(
+                [34.3174259, -78.8383233],
+                {}
+            ).addTo(map_d42d71a0bec1c79959bbe79ddd58897d);
+        
+    
+            var icon_5ed05149cf6e7a4ccbfe3d22e1245349 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_81267603142dc1e47548c6523d59d220.setIcon(icon_5ed05149cf6e7a4ccbfe3d22e1245349);
+        
+    
+        var popup_ef09d9a04e1243693a45f82f385f1c55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6d85319e2ab40c81709945cf2f43dc7 = $(`<div id="html_e6d85319e2ab40c81709945cf2f43dc7" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_ef09d9a04e1243693a45f82f385f1c55.setContent(html_e6d85319e2ab40c81709945cf2f43dc7);
+        
+
+        marker_81267603142dc1e47548c6523d59d220.bindPopup(popup_ef09d9a04e1243693a45f82f385f1c55)
+        ;
+
+        
+    
+    
+            marker_81267603142dc1e47548c6523d59d220.bindTooltip(
+                `<div>
+                     MARY KELLY DAY CARE HOME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

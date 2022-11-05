@@ -1,0 +1,10 @@
+/* Global Items */
+
+ul {
+  list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: #006aff;
+    cursor: pointer;
+  } 

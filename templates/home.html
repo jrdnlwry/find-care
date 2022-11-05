@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/baby-favicon.png"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <!-- Title -->
+    <title>Find Child Care, Daycare, Preschool &amp; More - Baby Book</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div href="#" class="header-logo">
+        <i class="fas fa-baby"></i>
+        <a href="#" class="header-logo-text">Baby Book</a>
+      </div>
+      <nav class="header-navbar">
+        <a href="#" class="header-nav-link current">Home</a>
+        <a href="#" class="header-nav-link">About</a>
+        <a href="#" class="header-nav-link">Contact</a>
+        <a href="#" class="header-nav-link">Sales</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Hero-Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h2 class="hero-title">
+            Find licensed <br />
+            <span class="hero-title-sp">child care</span> today!
+          </h2>
+          <div class="hero-search">
+            <div class="hero-search-field">
+              <input
+                type="text"
+                id="myInput"
+                placeholder="Search for a city..."
+              />
+              <button class="hero-search-btn" type="button" id="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <span
+              id="searchResponse"
+              style="display: none"
+              class="hero-search-error-text"
+              >We don't currently have that city in our index.</span
+            >
+            <!-- SEARCH FUNCTIONALITY -->
+            <!-- Need to figure out how to pass a list to the search bar -->
+            <ul class="hero-city-list">
+              <li class="hero-city-list-item" style="display: none">
+                <a href="/nc/raleigh" class="hero-city-list-item-link">Raleigh</a>
+              </li>
+              <li class="hero-city-list-item" style="display: none">
+                <a href="/nc/greensboro" class="hero-city-list-item-link">Greensboro</a>
+              </li>
+              <li class="hero-city-list-item" style="display: none">
+                <a href="/nc/charlotte" class="hero-city-list-item-link">Charlotte</a>
+              </li>
+              <li class="hero-city-list-item" style="display: none">
+                <a href="/nc/asheville" class="hero-city-list-item-link">Asheville</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOST POPULAR CITY LISTINGS-->
+      <div class="container">
+        <!-- City-list-Section -->
+        <section class="cities">
+          <ul class="cities-list">
+            <li class="cities-list-item">
+              <a href="/nc/raleigh" class="cities-list-item-link">Raleigh</a>
+            </li>
+            <li class="cities-list-item">
+              <a href="/nc/greensboro" class="cities-list-item-link">Greensboro</a>
+            </li>
+            <li class="cities-list-item">
+              <a href="/nc/charlotte" class="cities-list-item-link">Charlotte</a>
+            </li>
+            <li class="cities-list-item">
+              <a href="/nc/asheville" class="cities-list-item-link">Asheville</a>
+            </li>
+            <li class="cities-list-item">
+              <a href="/nc/wilmington" class="cities-list-item-link">Wilmington</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- How-It-Works-Section -->
+        <section class="how-work">
+          <h2 class="how-work-title">How It Works</h2>
+          <div class="how-work-cards">
+            <div class="how-work-card">
+              <div class="how-work-card-icon">
+                <img src="../static/images/search-icon.png" alt="Search Icon" />
+              </div>
+              <h3 class="how-work-card-title">Search for Child Care</h3>
+              <p class="how-work-card-desc">
+                Search by location, age, hours and more.
+              </p>
+            </div>
+            <div class="how-work-card">
+              <div class="how-work-card-icon">
+                <img src="../static/images/licensed-image.png" alt="Licensed Icon" />
+              </div>
+              <h3 class="how-work-card-title">Find Licensed Daycares</h3>
+              <p class="how-work-card-desc">
+                View photos, services, reviews and licensing information.
+              </p>
+            </div>
+            <div class="how-work-card">
+              <div class="how-work-card-icon">
+                <img src="../static/images/contact-provider.png" alt="Schedule Icon" />
+              </div>
+              <h3 class="how-work-card-title">Effortlessly Book Tours</h3>
+              <p class="how-work-card-desc">
+                Contact providers with questions, concerns and schedule tours.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="#" class="footer-link">Home</a>
+            <a href="#" class="footer-link">Terms</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="/index" class="footer-link">County Search</a>
+          </div>
+          <p class="footer-logo">Copyright &copy; 2022 Baby Book</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

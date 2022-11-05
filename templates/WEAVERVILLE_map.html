@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_07857744805ca875cf227ac23fcffcaa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_07857744805ca875cf227ac23fcffcaa" ></div>
+        
+</body>
+<script>    
+    
+            var map_07857744805ca875cf227ac23fcffcaa = L.map(
+                "map_07857744805ca875cf227ac23fcffcaa",
+                {
+                    center: [35.7396121, -82.55752131265271],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_47e5f68a6201a73e78040059b02ca42e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_07857744805ca875cf227ac23fcffcaa);
+        
+    
+            var marker_ee44ba70459630615f2191e85e9e24af = L.marker(
+                [35.7396121, -82.55752131265271],
+                {}
+            ).addTo(map_07857744805ca875cf227ac23fcffcaa);
+        
+    
+            var icon_09d46f5085d9f1e732b164881ca8eff4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ee44ba70459630615f2191e85e9e24af.setIcon(icon_09d46f5085d9f1e732b164881ca8eff4);
+        
+    
+        var popup_42ded09a1794e8812c414d11cb716a25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6149fe4aa35e2bcf3a915bf03985090 = $(`<div id="html_f6149fe4aa35e2bcf3a915bf03985090" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_42ded09a1794e8812c414d11cb716a25.setContent(html_f6149fe4aa35e2bcf3a915bf03985090);
+        
+
+        marker_ee44ba70459630615f2191e85e9e24af.bindPopup(popup_42ded09a1794e8812c414d11cb716a25)
+        ;
+
+        
+    
+    
+            marker_ee44ba70459630615f2191e85e9e24af.bindTooltip(
+                `<div>
+                     NORTH BUNCOMBE HS CHILD CARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_184bb32e7ef99c0bb2281319fe4d4170 = L.marker(
+                [35.693562405818234, -82.560378031904],
+                {}
+            ).addTo(map_07857744805ca875cf227ac23fcffcaa);
+        
+    
+            var icon_1f431bfef40c71d1d99012df52116dad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_184bb32e7ef99c0bb2281319fe4d4170.setIcon(icon_1f431bfef40c71d1d99012df52116dad);
+        
+    
+        var popup_7c0febe0fec39dc0f341c3d9ab32af38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecd7976b6629d2867eee515d31310588 = $(`<div id="html_ecd7976b6629d2867eee515d31310588" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_7c0febe0fec39dc0f341c3d9ab32af38.setContent(html_ecd7976b6629d2867eee515d31310588);
+        
+
+        marker_184bb32e7ef99c0bb2281319fe4d4170.bindPopup(popup_7c0febe0fec39dc0f341c3d9ab32af38)
+        ;
+
+        
+    
+    
+            marker_184bb32e7ef99c0bb2281319fe4d4170.bindTooltip(
+                `<div>
+                     WEAVERVILLE PRIMARY SCHOOL HEAD START
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2d3f3f08500d0fb27612d8291ce9cc6 = L.marker(
+                [35.6894133437804, -82.5620971602647],
+                {}
+            ).addTo(map_07857744805ca875cf227ac23fcffcaa);
+        
+    
+            var icon_051842c737ad36374e42e9f41f2a7e8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d2d3f3f08500d0fb27612d8291ce9cc6.setIcon(icon_051842c737ad36374e42e9f41f2a7e8b);
+        
+    
+        var popup_c8968e6e051076a8d76870db1bf5c6b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ef388d16da0e60441ea59a16feda480 = $(`<div id="html_6ef388d16da0e60441ea59a16feda480" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_c8968e6e051076a8d76870db1bf5c6b7.setContent(html_6ef388d16da0e60441ea59a16feda480);
+        
+
+        marker_d2d3f3f08500d0fb27612d8291ce9cc6.bindPopup(popup_c8968e6e051076a8d76870db1bf5c6b7)
+        ;
+
+        
+    
+    
+            marker_d2d3f3f08500d0fb27612d8291ce9cc6.bindTooltip(
+                `<div>
+                     YMCA WEAVERVILLE ELEMENTARY AFTERSCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

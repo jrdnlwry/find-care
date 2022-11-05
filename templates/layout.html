@@ -1,0 +1,86 @@
+<!--New style addition 10.7.2022-->
+<style>
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+#main-header {
+    background-color:#9575CD;
+    color:#fff;
+}
+
+#navbar{
+    background-color:#5E35B1;
+    color:#fff;
+}
+
+#navbar ul{
+    padding:0;
+    list-style:none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+}
+
+#main-footer{
+    background: #5E35B1;
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+</style>
+<!doctype html>
+<html>
+
+  <head>
+    <title>{{titleTag}}</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+<!--New navaddition 10.7.2022-->
+    <header id="main-header">
+      <div class="container">
+          <h1> Book Baby</h1>
+      </div>
+  </header>
+  <nav id="navbar">
+      <div class="container">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Sales</a></li>
+          </ul>
+      </div>
+  </nav>
+<!--End New navaddition 10.7.2022-->
+  <body>
+  {% block content %}{% endblock %}
+  </body>
+<!--Being Footer addition-->
+<footer id="main-footer">
+  <p>Copyright &copy; 2022 My Website</p>
+  <nav id="navbar">
+    <div class="container">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+  </nav>
+</footer>
+</html>

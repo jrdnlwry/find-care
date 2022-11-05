@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bead912881afaaa5598f3cf103294be7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bead912881afaaa5598f3cf103294be7" ></div>
+        
+</body>
+<script>    
+    
+            var map_bead912881afaaa5598f3cf103294be7 = L.map(
+                "map_bead912881afaaa5598f3cf103294be7",
+                {
+                    center: [36.427049, -81.484054],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9f31fe337711c82e84c1ef66c7ef8e85 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bead912881afaaa5598f3cf103294be7);
+        
+    
+            var marker_7e3ebdef3e058fb3ef0c7eff0a95e190 = L.marker(
+                [36.427049, -81.484054],
+                {}
+            ).addTo(map_bead912881afaaa5598f3cf103294be7);
+        
+    
+            var icon_05e4ff1a2cd21a608893dbe405c54ae4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7e3ebdef3e058fb3ef0c7eff0a95e190.setIcon(icon_05e4ff1a2cd21a608893dbe405c54ae4);
+        
+    
+        var popup_71b9c9fb846b260984d2d123dd03f046 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_446311702c8317423a50d3c6c3ccef6a = $(`<div id="html_446311702c8317423a50d3c6c3ccef6a" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_71b9c9fb846b260984d2d123dd03f046.setContent(html_446311702c8317423a50d3c6c3ccef6a);
+        
+
+        marker_7e3ebdef3e058fb3ef0c7eff0a95e190.bindPopup(popup_71b9c9fb846b260984d2d123dd03f046)
+        ;
+
+        
+    
+    
+            marker_7e3ebdef3e058fb3ef0c7eff0a95e190.bindTooltip(
+                `<div>
+                     ASHE COUNTY HEAD START SIZEMORE CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_643d27277ee1f8ed5ed0363d66b22dc1 = L.marker(
+                [36.41571925557891, -81.46836036759916],
+                {}
+            ).addTo(map_bead912881afaaa5598f3cf103294be7);
+        
+    
+            var icon_b24cf13ab4f0e4744dd58c0513450f18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_643d27277ee1f8ed5ed0363d66b22dc1.setIcon(icon_b24cf13ab4f0e4744dd58c0513450f18);
+        
+    
+        var popup_ff5eb1947b796575470b4cc35aa1a747 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2e29cb95eab168e91ac44c6ea158cba = $(`<div id="html_d2e29cb95eab168e91ac44c6ea158cba" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_ff5eb1947b796575470b4cc35aa1a747.setContent(html_d2e29cb95eab168e91ac44c6ea158cba);
+        
+
+        marker_643d27277ee1f8ed5ed0363d66b22dc1.bindPopup(popup_ff5eb1947b796575470b4cc35aa1a747)
+        ;
+
+        
+    
+    
+            marker_643d27277ee1f8ed5ed0363d66b22dc1.bindTooltip(
+                `<div>
+                     ASHE DEVELOPMENTAL DAY SCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

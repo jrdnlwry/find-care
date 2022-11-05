@@ -1,0 +1,190 @@
+<style>
+  /*new styling */
+  .container{
+      width:80%;
+      margin:auto;
+      overflow:hidden;
+  }
+  
+  
+  #showcase{
+      /*background-image:url('../images/coral.jpg');*/
+      background-position:center right;
+      min-height:100px;
+      margin-bottom:30px;
+      text-align: center;
+  }
+  
+  #showcase h1{
+      font-size: 50px;
+      line-height: 1.6em;
+      padding-top:30px;
+  }
+  
+  #main{
+      float:left;
+      width:70%;
+      padding:0 30px;
+      box-sizing: border-box;
+  }
+  
+  #sidebar{
+      float:right;
+      border:1px solid;
+      box-shadow: 5px 10px #888888;
+      width:30%;
+      border-radius:15px;
+      padding:10px;
+      box-sizing: border-box;
+  }
+  
+  /*Child Care Results Card*/
+  
+  .item4{
+    border:1px #ccc solid;
+    padding:10px;
+    /* gives the border rounder corners */
+    border-radius:15px;
+    list-style:none;
+    width: 550px;
+    text-align: left;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 10px #888888;
+  }
+  
+  /* map settings */
+  .item5{
+    /* gives the border rounder corners */
+    width: auto;
+    max-height: auto;
+  }
+  
+  
+  #block {
+      float:left;
+      width:33.3%;
+      border:1px solid #ccc;
+      /* box sizing takes in border & padding to determine width */
+      box-sizing:border-box;
+      border-radius:15px;
+      text-align: center;
+      height: 20px;
+  }
+  
+  .type{
+      background-color: #797DD6;
+      font-weight: 500;
+      color: #fff;
+  }
+  
+  .license{
+      background-color: #D6D279;
+      font-weight: 500;
+      color: #fff;
+  }
+  
+  .subsidized{
+      background-color: #D6797D;
+      font-weight: 500;
+      color: #fff;
+  }
+  
+  .relatedCity{
+    text-align: left;
+  
+  }
+  
+  /* mobile settings */
+
+  @media(max-width:750px){
+      .item4{
+        max-width: 300px;
+      }
+      .attributes .block{
+        max-height: 400px;
+        max-width: 100%;
+      }
+      #sidebar{
+          display: none;
+      }
+      #sidebar .item5{
+          display:none;
+      }
+
+
+  }
+
+  /* #main-footer{
+    background: #5E35B1;
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+} */
+  </style>
+    
+    {% extends 'layout.html' %}
+    
+    {% block content %}
+  <div class="grid">
+    <section id="showcase">
+        <div class="container">
+            <h1>
+              {{titleTag}}
+            </h1>
+            <hr>
+        </div>
+    </section>
+    <div class="container">
+      <section id="main">
+        <div class="item4">
+          <ol>
+              {% for index, row in dataSource.iterrows() %}
+              <br>
+              <div class="card">
+                <div class="attributes">
+                  <p id="block" class="type">{{ row['Type'] }}</p> <p id="block" class="license">License #: {{ row['License'] }}</p> 
+                  <p id="block" class="subsidized">Subsidized: {{ row['Enrolled in subsidized program'] }}</p>
+                </div>
+                  <li><b>{{ row['Name'] }}</b></li>
+                  <p> {{ row['Street'] }}</p>
+                  <p> {{ row['City'] }}, {{ row['State'] }} {{ row['Zip'] }}</p>
+                  <p> ph: {{ row['Phone'] }} | email: {{ row['Email']}}</p>
+              </div>
+              <br>
+              <hr>
+              {% endfor %}
+          </ol>
+        
+        </div>
+      </section>
+      <aside id="sidebar">
+  
+        <div class="item3">
+  
+          <h4 id="relatedCity">Nearby Cities in {{ County }} Co.</h4>
+          {% for index, row in relatedCities.iterrows() %}
+            <a href="/{{ row['State'].lower() }}/{{ row['City'].lower().replace(' ','-') }}">{{ row['City'] }}</a>
+          <br>
+          {% endfor %}  
+        </div>
+        <br>
+  
+        <div class="item5">
+        {% block body %}
+          {% include  cityMap %}
+        {% endblock %} 
+        </div>
+  
+      </aside>
+  
+    </div>
+  </div>
+  
+<!-- Being Footer addition
+<footer id="main-footer">
+  <p>Copyright &copy; 2022 My Website</p>
+</footer> -->
+
+    {% endblock %}

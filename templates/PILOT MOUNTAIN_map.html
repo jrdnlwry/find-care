@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c064b761ae34c01db7d49f4c861b442 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5c064b761ae34c01db7d49f4c861b442" ></div>
+        
+</body>
+<script>    
+    
+            var map_5c064b761ae34c01db7d49f4c861b442 = L.map(
+                "map_5c064b761ae34c01db7d49f4c861b442",
+                {
+                    center: [36.39443238518167, -80.4717996531621],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_81ab3d83083b6f3f9b3754273325fbd4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5c064b761ae34c01db7d49f4c861b442);
+        
+    
+            var marker_cd4493313c89828c31c50ea660b05bdb = L.marker(
+                [36.39443238518167, -80.4717996531621],
+                {}
+            ).addTo(map_5c064b761ae34c01db7d49f4c861b442);
+        
+    
+            var icon_dd4dd1b5c97d1b9dd5df8b0a64d735d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cd4493313c89828c31c50ea660b05bdb.setIcon(icon_dd4dd1b5c97d1b9dd5df8b0a64d735d7);
+        
+    
+        var popup_49137ff10a6151e0ce414f77e4d27d39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1df9d489b26f458d4d4e34f34802e438 = $(`<div id="html_1df9d489b26f458d4d4e34f34802e438" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_49137ff10a6151e0ce414f77e4d27d39.setContent(html_1df9d489b26f458d4d4e34f34802e438);
+        
+
+        marker_cd4493313c89828c31c50ea660b05bdb.bindPopup(popup_49137ff10a6151e0ce414f77e4d27d39)
+        ;
+
+        
+    
+    
+            marker_cd4493313c89828c31c50ea660b05bdb.bindTooltip(
+                `<div>
+                     LET THEM BE LITTLE DAYCARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb913a5105618be107e6014cc1c63c5a = L.marker(
+                [36.3898939, -80.47037749474443],
+                {}
+            ).addTo(map_5c064b761ae34c01db7d49f4c861b442);
+        
+    
+            var icon_88b8ed525a85b3b3d70e588db88313f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fb913a5105618be107e6014cc1c63c5a.setIcon(icon_88b8ed525a85b3b3d70e588db88313f2);
+        
+    
+        var popup_10b1fe06fc815d8d7975e49af70a488d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5daba92161c87d3bbef08f5e5e5eccfe = $(`<div id="html_5daba92161c87d3bbef08f5e5e5eccfe" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_10b1fe06fc815d8d7975e49af70a488d.setContent(html_5daba92161c87d3bbef08f5e5e5eccfe);
+        
+
+        marker_fb913a5105618be107e6014cc1c63c5a.bindPopup(popup_10b1fe06fc815d8d7975e49af70a488d)
+        ;
+
+        
+    
+    
+            marker_fb913a5105618be107e6014cc1c63c5a.bindTooltip(
+                `<div>
+                     PILOT MTN. ELEMENTARY SCHOOL PRE-K SCHOOL READY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0976479e8d6388cf847f6562559ea5a2 = L.marker(
+                [36.4594625, -80.4950335],
+                {}
+            ).addTo(map_5c064b761ae34c01db7d49f4c861b442);
+        
+    
+            var icon_80ca6323cb3061d760619635611db19e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0976479e8d6388cf847f6562559ea5a2.setIcon(icon_80ca6323cb3061d760619635611db19e);
+        
+    
+        var popup_abb115e513ec3f673629226db8207044 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06623bf882700afbbe2dbedf839c08b3 = $(`<div id="html_06623bf882700afbbe2dbedf839c08b3" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_abb115e513ec3f673629226db8207044.setContent(html_06623bf882700afbbe2dbedf839c08b3);
+        
+
+        marker_0976479e8d6388cf847f6562559ea5a2.bindPopup(popup_abb115e513ec3f673629226db8207044)
+        ;
+
+        
+    
+    
+            marker_0976479e8d6388cf847f6562559ea5a2.bindTooltip(
+                `<div>
+                     WESTFIELD PRE-K SCHOOL READY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

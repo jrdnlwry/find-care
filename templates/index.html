@@ -1,0 +1,74 @@
+<style>
+  .accordion {
+  /*update color */
+  margin: auto;
+  background-color: #EDE7F6;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  /*Update width*/
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+  transition: 0.4s;
+  }
+  
+/*update hover state color */
+.active, .accordion:hover {
+  background-color: #B39DDB; 
+}
+  
+  .panel {
+    margin: auto;
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  </style>
+  
+  {% extends 'layout.html' %}
+  
+  {% block content %}
+  
+    <header id="pageHeader" class="headerName">
+    </header>
+    <body>
+    <div class="title">
+      <h1> Browse Child Care by County/State</h1>
+      <hr>
+    </div>
+    <div class="grid" class="container">
+          {% for i in datasource.items() %}
+            <button class="accordion">{{i[0]}}</button> <!-- COUNTY -->
+            <div class="panel">
+            {% for x in i[1] %}
+              <!-- CITY -->
+              <a href= "{{ '/nc/' + x.lower()|replace(' ', '-')}}">{{ x.lower() }}</a>
+              <br>
+            {% endfor %}
+            </div>
+            
+          {% endfor %}
+     </div>
+    </body>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+{% endblock %}

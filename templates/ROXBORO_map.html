@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92a108062a8e2efea40fa92a79928d9a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_92a108062a8e2efea40fa92a79928d9a" ></div>
+        
+</body>
+<script>    
+    
+            var map_92a108062a8e2efea40fa92a79928d9a = L.map(
+                "map_92a108062a8e2efea40fa92a79928d9a",
+                {
+                    center: [36.41923656317276, -78.97267497644256],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9d60cb328223222183d17af00d9f17dc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var marker_5a88717c79bb066deedd1235e5521599 = L.marker(
+                [36.41923656317276, -78.97267497644256],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_151d3dc1572ba6ebb7e86c2dab64517e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_5a88717c79bb066deedd1235e5521599.setIcon(icon_151d3dc1572ba6ebb7e86c2dab64517e);
+        
+    
+        var popup_da292e59b8295c57976fb91e648b68b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b70c27a84f2f9d6553c5127534411787 = $(`<div id="html_b70c27a84f2f9d6553c5127534411787" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_da292e59b8295c57976fb91e648b68b1.setContent(html_b70c27a84f2f9d6553c5127534411787);
+        
+
+        marker_5a88717c79bb066deedd1235e5521599.bindPopup(popup_da292e59b8295c57976fb91e648b68b1)
+        ;
+
+        
+    
+    
+            marker_5a88717c79bb066deedd1235e5521599.bindTooltip(
+                `<div>
+                     AMELIA'S HOME DAY CARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_759b35cb1ece40a8a1273b18c9e8e0d9 = L.marker(
+                [36.405073, -78.975279],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_c65b7932af8ac1914c1d43081f212b3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_759b35cb1ece40a8a1273b18c9e8e0d9.setIcon(icon_c65b7932af8ac1914c1d43081f212b3b);
+        
+    
+        var popup_1bd85eac893b9ba517473ddfde5ad1ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ec2156a4c4bd143f271a3b4f3551a50 = $(`<div id="html_2ec2156a4c4bd143f271a3b4f3551a50" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_1bd85eac893b9ba517473ddfde5ad1ed.setContent(html_2ec2156a4c4bd143f271a3b4f3551a50);
+        
+
+        marker_759b35cb1ece40a8a1273b18c9e8e0d9.bindPopup(popup_1bd85eac893b9ba517473ddfde5ad1ed)
+        ;
+
+        
+    
+    
+            marker_759b35cb1ece40a8a1273b18c9e8e0d9.bindTooltip(
+                `<div>
+                     CREATIVE DAYS CHILD CARE CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_219624388d78a48fcbf2542fff14c294 = L.marker(
+                [36.40657873913044, -78.98574376086957],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_6217bebe3c1a66de8b54e5d5a84895c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_219624388d78a48fcbf2542fff14c294.setIcon(icon_6217bebe3c1a66de8b54e5d5a84895c7);
+        
+    
+        var popup_89f0b8881cfbeffdc1a8e59d55e7b662 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f98a99926467d41539da3a7733972c75 = $(`<div id="html_f98a99926467d41539da3a7733972c75" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_89f0b8881cfbeffdc1a8e59d55e7b662.setContent(html_f98a99926467d41539da3a7733972c75);
+        
+
+        marker_219624388d78a48fcbf2542fff14c294.bindPopup(popup_89f0b8881cfbeffdc1a8e59d55e7b662)
+        ;
+
+        
+    
+    
+            marker_219624388d78a48fcbf2542fff14c294.bindTooltip(
+                `<div>
+                     EAM PRESCHOOL COGIC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a53048b1507825f4f55bf2487eaada7 = L.marker(
+                [36.39482529609402, -78.99410208715528],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_a79f654762fe4957545cdc40f16e85ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7a53048b1507825f4f55bf2487eaada7.setIcon(icon_a79f654762fe4957545cdc40f16e85ae);
+        
+    
+        var popup_f8951045b35ce3e9197741c555f7db49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72bafe63b204c93a1edb90930c3f3830 = $(`<div id="html_72bafe63b204c93a1edb90930c3f3830" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_f8951045b35ce3e9197741c555f7db49.setContent(html_72bafe63b204c93a1edb90930c3f3830);
+        
+
+        marker_7a53048b1507825f4f55bf2487eaada7.bindPopup(popup_f8951045b35ce3e9197741c555f7db49)
+        ;
+
+        
+    
+    
+            marker_7a53048b1507825f4f55bf2487eaada7.bindTooltip(
+                `<div>
+                     EARL BRADSHER PRESCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e301379ab07c0719193e5f543c7c7edc = L.marker(
+                [36.3739678, -78.9899505],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_9b7421179edae431881bb34f48753d19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e301379ab07c0719193e5f543c7c7edc.setIcon(icon_9b7421179edae431881bb34f48753d19);
+        
+    
+        var popup_ed0253925beec072291329ac304b38f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7694a7a560ef70a8d6275fb203dd54b8 = $(`<div id="html_7694a7a560ef70a8d6275fb203dd54b8" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_ed0253925beec072291329ac304b38f7.setContent(html_7694a7a560ef70a8d6275fb203dd54b8);
+        
+
+        marker_e301379ab07c0719193e5f543c7c7edc.bindPopup(popup_ed0253925beec072291329ac304b38f7)
+        ;
+
+        
+    
+    
+            marker_e301379ab07c0719193e5f543c7c7edc.bindTooltip(
+                `<div>
+                     EARLY INTERVENTION & FAMILY SERVICES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7386e38fc3a3d68aad4cb5e550584ea5 = L.marker(
+                [36.34872636435402, -78.97944812163419],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_ab5da23a3392aac0efbf11bdf7e9b331 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7386e38fc3a3d68aad4cb5e550584ea5.setIcon(icon_ab5da23a3392aac0efbf11bdf7e9b331);
+        
+    
+        var popup_22712a5c312aad6a2a93ae99380f1593 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a340c6fc690583dc1d70d90e190b60c2 = $(`<div id="html_a340c6fc690583dc1d70d90e190b60c2" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_22712a5c312aad6a2a93ae99380f1593.setContent(html_a340c6fc690583dc1d70d90e190b60c2);
+        
+
+        marker_7386e38fc3a3d68aad4cb5e550584ea5.bindPopup(popup_22712a5c312aad6a2a93ae99380f1593)
+        ;
+
+        
+    
+    
+            marker_7386e38fc3a3d68aad4cb5e550584ea5.bindTooltip(
+                `<div>
+                     LEARN & PLAY CHILDREN'S ACADEMY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49184827a5446d1dba5a8e281ee12e6f = L.marker(
+                [36.38326227193588, -78.98934394466472],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_a559bdf6e4d7accecef1ee6ec97fa27c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_49184827a5446d1dba5a8e281ee12e6f.setIcon(icon_a559bdf6e4d7accecef1ee6ec97fa27c);
+        
+    
+        var popup_d7e7a8b93130f1dbcb33513b04d05267 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66d40f72f31bcd49c9239dab19fae4dd = $(`<div id="html_66d40f72f31bcd49c9239dab19fae4dd" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_d7e7a8b93130f1dbcb33513b04d05267.setContent(html_66d40f72f31bcd49c9239dab19fae4dd);
+        
+
+        marker_49184827a5446d1dba5a8e281ee12e6f.bindPopup(popup_d7e7a8b93130f1dbcb33513b04d05267)
+        ;
+
+        
+    
+    
+            marker_49184827a5446d1dba5a8e281ee12e6f.bindTooltip(
+                `<div>
+                     LESTER'S TODDLER CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5e1e724dde554468d34a660b0f5f6d1 = L.marker(
+                [36.39208067865105, -78.99589073550437],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_eaa64622146c51b2bf8bd4c4666690b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e5e1e724dde554468d34a660b0f5f6d1.setIcon(icon_eaa64622146c51b2bf8bd4c4666690b8);
+        
+    
+        var popup_c8b7b23d0f717dc927d155f5a20d634f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15997b3d77b43d5071feb92c2189dfc6 = $(`<div id="html_15997b3d77b43d5071feb92c2189dfc6" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_c8b7b23d0f717dc927d155f5a20d634f.setContent(html_15997b3d77b43d5071feb92c2189dfc6);
+        
+
+        marker_e5e1e724dde554468d34a660b0f5f6d1.bindPopup(popup_c8b7b23d0f717dc927d155f5a20d634f)
+        ;
+
+        
+    
+    
+            marker_e5e1e724dde554468d34a660b0f5f6d1.bindTooltip(
+                `<div>
+                     MOTHER GOOSE EARLY LEARNING CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_685d1b5e987b7d698d51e95b706221e1 = L.marker(
+                [36.4389883, -78.90599954365415],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_deb989a8348d452f21fb506af511faed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_685d1b5e987b7d698d51e95b706221e1.setIcon(icon_deb989a8348d452f21fb506af511faed);
+        
+    
+        var popup_2b88314f7fac329bddcec6b4dfd3d5d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09e460b4849ac90243350d870b0e1498 = $(`<div id="html_09e460b4849ac90243350d870b0e1498" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_2b88314f7fac329bddcec6b4dfd3d5d2.setContent(html_09e460b4849ac90243350d870b0e1498);
+        
+
+        marker_685d1b5e987b7d698d51e95b706221e1.bindPopup(popup_2b88314f7fac329bddcec6b4dfd3d5d2)
+        ;
+
+        
+    
+    
+            marker_685d1b5e987b7d698d51e95b706221e1.bindTooltip(
+                `<div>
+                     NORTH END ELEMENTARY SCHOOL AGE CARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13abca68155e3a965bca6618a31aca93 = L.marker(
+                [36.37752771083942, -78.98618679092985],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_321277315136db7f588bff0ebbbf94a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_13abca68155e3a965bca6618a31aca93.setIcon(icon_321277315136db7f588bff0ebbbf94a2);
+        
+    
+        var popup_c707a5e88071cbbdaaeabf60a91ea934 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f54b1d8527305182590d32919255615a = $(`<div id="html_f54b1d8527305182590d32919255615a" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_c707a5e88071cbbdaaeabf60a91ea934.setContent(html_f54b1d8527305182590d32919255615a);
+        
+
+        marker_13abca68155e3a965bca6618a31aca93.bindPopup(popup_c707a5e88071cbbdaaeabf60a91ea934)
+        ;
+
+        
+    
+    
+            marker_13abca68155e3a965bca6618a31aca93.bindTooltip(
+                `<div>
+                     PEEK A BOO DAYCARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68801db19c6e82e447a739a7c4b81bc0 = L.marker(
+                [36.4312519, -78.9802884],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_31bb31682d9964f0f28790e2d8d373f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_68801db19c6e82e447a739a7c4b81bc0.setIcon(icon_31bb31682d9964f0f28790e2d8d373f1);
+        
+    
+        var popup_4524c873041e8b3b723c749fad20069b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6422e7115f5cf6c2277c0fd38ab5de9 = $(`<div id="html_e6422e7115f5cf6c2277c0fd38ab5de9" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_4524c873041e8b3b723c749fad20069b.setContent(html_e6422e7115f5cf6c2277c0fd38ab5de9);
+        
+
+        marker_68801db19c6e82e447a739a7c4b81bc0.bindPopup(popup_4524c873041e8b3b723c749fad20069b)
+        ;
+
+        
+    
+    
+            marker_68801db19c6e82e447a739a7c4b81bc0.bindTooltip(
+                `<div>
+                     PIEDMONT COMMUNITY COLLEGE CHILD DEVELOPMENT CTR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c590c38eb0fef344aeb189c0a06188bb = L.marker(
+                [36.3965857, -79.0046154],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_af2988e23aec5a39bb6299245e895673 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_c590c38eb0fef344aeb189c0a06188bb.setIcon(icon_af2988e23aec5a39bb6299245e895673);
+        
+    
+        var popup_d00c6cd725d3e22dd3f9f47fd05427ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10659ae4e9dad796403f0dda15106c7e = $(`<div id="html_10659ae4e9dad796403f0dda15106c7e" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_d00c6cd725d3e22dd3f9f47fd05427ff.setContent(html_10659ae4e9dad796403f0dda15106c7e);
+        
+
+        marker_c590c38eb0fef344aeb189c0a06188bb.bindPopup(popup_d00c6cd725d3e22dd3f9f47fd05427ff)
+        ;
+
+        
+    
+    
+            marker_c590c38eb0fef344aeb189c0a06188bb.bindTooltip(
+                `<div>
+                     PRECIOUS ANGELS DAY CARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7393c8ef1b0d3adffbb249271c33beaa = L.marker(
+                [36.3439781718488, -78.9737378350486],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_60957ce8a6d566cb3ea5f5ef9043c2af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7393c8ef1b0d3adffbb249271c33beaa.setIcon(icon_60957ce8a6d566cb3ea5f5ef9043c2af);
+        
+    
+        var popup_3fff1c63f5326b2e7a06cd18438b1a41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d022c67c9207e63dff6cbdd9aa9ee48e = $(`<div id="html_d022c67c9207e63dff6cbdd9aa9ee48e" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_3fff1c63f5326b2e7a06cd18438b1a41.setContent(html_d022c67c9207e63dff6cbdd9aa9ee48e);
+        
+
+        marker_7393c8ef1b0d3adffbb249271c33beaa.bindPopup(popup_3fff1c63f5326b2e7a06cd18438b1a41)
+        ;
+
+        
+    
+    
+            marker_7393c8ef1b0d3adffbb249271c33beaa.bindTooltip(
+                `<div>
+                     PROGRESSIVE LEARNING ACADEMY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77d4d60ec4a7e8010d16d29607fcb3a6 = L.marker(
+                [36.394781040816326, -78.99035603061225],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_112d604723bd481945273ce90391f3e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_77d4d60ec4a7e8010d16d29607fcb3a6.setIcon(icon_112d604723bd481945273ce90391f3e5);
+        
+    
+        var popup_94a842fed49993d4c882045c7488afcf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7227bafd3e2f40c0fe9c2f7eac9a5ee = $(`<div id="html_d7227bafd3e2f40c0fe9c2f7eac9a5ee" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_94a842fed49993d4c882045c7488afcf.setContent(html_d7227bafd3e2f40c0fe9c2f7eac9a5ee);
+        
+
+        marker_77d4d60ec4a7e8010d16d29607fcb3a6.bindPopup(popup_94a842fed49993d4c882045c7488afcf)
+        ;
+
+        
+    
+    
+            marker_77d4d60ec4a7e8010d16d29607fcb3a6.bindTooltip(
+                `<div>
+                     PROGRESSIVE LEARNING ACADEMY-PRESCHOOL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3b92a04796d0622e15e4eeced68151d = L.marker(
+                [36.3831999, -78.9875914],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_878f80dfb15250b327efd49d3fbfd311 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_c3b92a04796d0622e15e4eeced68151d.setIcon(icon_878f80dfb15250b327efd49d3fbfd311);
+        
+    
+        var popup_81b618aa37f64a08ea5500a6b7af306a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cde95e469f542ccd061b4c9f214d00f9 = $(`<div id="html_cde95e469f542ccd061b4c9f214d00f9" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_81b618aa37f64a08ea5500a6b7af306a.setContent(html_cde95e469f542ccd061b4c9f214d00f9);
+        
+
+        marker_c3b92a04796d0622e15e4eeced68151d.bindPopup(popup_81b618aa37f64a08ea5500a6b7af306a)
+        ;
+
+        
+    
+    
+            marker_c3b92a04796d0622e15e4eeced68151d.bindTooltip(
+                `<div>
+                     RE-RE'S CHILDCARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0be0592668e92ecf99786c8b2884b48f = L.marker(
+                [36.3952551, -78.9866633],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_3180c1c2f58e712c64b31eb275b553af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_0be0592668e92ecf99786c8b2884b48f.setIcon(icon_3180c1c2f58e712c64b31eb275b553af);
+        
+    
+        var popup_74bf0c2cbadc7d04e0d062adbbacc0d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e11f6452806503eaefc96253190423be = $(`<div id="html_e11f6452806503eaefc96253190423be" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_74bf0c2cbadc7d04e0d062adbbacc0d3.setContent(html_e11f6452806503eaefc96253190423be);
+        
+
+        marker_0be0592668e92ecf99786c8b2884b48f.bindPopup(popup_74bf0c2cbadc7d04e0d062adbbacc0d3)
+        ;
+
+        
+    
+    
+            marker_0be0592668e92ecf99786c8b2884b48f.bindTooltip(
+                `<div>
+                     RENEE OAKLEY DAY CARE HOME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de835d2af24ac5aefbfdfbf1a6e5bd9d = L.marker(
+                [36.3848026, -78.9876021],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_386d785bb13eebba1064a2418180ae8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_de835d2af24ac5aefbfdfbf1a6e5bd9d.setIcon(icon_386d785bb13eebba1064a2418180ae8c);
+        
+    
+        var popup_ed6222c74daf66017f2d76be911bfdaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a821add66fb849dfe73b3ebe9cc1e8bd = $(`<div id="html_a821add66fb849dfe73b3ebe9cc1e8bd" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_ed6222c74daf66017f2d76be911bfdaa.setContent(html_a821add66fb849dfe73b3ebe9cc1e8bd);
+        
+
+        marker_de835d2af24ac5aefbfdfbf1a6e5bd9d.bindPopup(popup_ed6222c74daf66017f2d76be911bfdaa)
+        ;
+
+        
+    
+    
+            marker_de835d2af24ac5aefbfdfbf1a6e5bd9d.bindTooltip(
+                `<div>
+                     ROXBORO CHRISTIAN ACADEMY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d92ec895175ed03f58f54b26fcb0b7f5 = L.marker(
+                [36.3752625, -78.9879373769088],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_2848387891205c9f9d5ca6bf76ed49e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d92ec895175ed03f58f54b26fcb0b7f5.setIcon(icon_2848387891205c9f9d5ca6bf76ed49e1);
+        
+    
+        var popup_04cd0e271562765239099b03c9e2dfe9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8762d0d9e721a23f196cfeb3322bcbf1 = $(`<div id="html_8762d0d9e721a23f196cfeb3322bcbf1" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_04cd0e271562765239099b03c9e2dfe9.setContent(html_8762d0d9e721a23f196cfeb3322bcbf1);
+        
+
+        marker_d92ec895175ed03f58f54b26fcb0b7f5.bindPopup(popup_04cd0e271562765239099b03c9e2dfe9)
+        ;
+
+        
+    
+    
+            marker_d92ec895175ed03f58f54b26fcb0b7f5.bindTooltip(
+                `<div>
+                     SOUTH ELEMENTARY SCHOOL AGE CARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34daea2ed7e4c6b203f05e6b36b36e2a = L.marker(
+                [36.410215362937, -78.97401554623364],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_baa2eb3db7e2fdc7a8eded9bbc1027dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_34daea2ed7e4c6b203f05e6b36b36e2a.setIcon(icon_baa2eb3db7e2fdc7a8eded9bbc1027dd);
+        
+    
+        var popup_a9ec539a952f9e05f59074c1167b005d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa1adfd9fd92aa8056022e8dc995e078 = $(`<div id="html_aa1adfd9fd92aa8056022e8dc995e078" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_a9ec539a952f9e05f59074c1167b005d.setContent(html_aa1adfd9fd92aa8056022e8dc995e078);
+        
+
+        marker_34daea2ed7e4c6b203f05e6b36b36e2a.bindPopup(popup_a9ec539a952f9e05f59074c1167b005d)
+        ;
+
+        
+    
+    
+            marker_34daea2ed7e4c6b203f05e6b36b36e2a.bindTooltip(
+                `<div>
+                     SPRINGFIELD KIDS HOME DAY CARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe58ee331871d268516c5b5ef90e017a = L.marker(
+                [36.42632184244307, -78.96911913024601],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_7c05d885922b459a5431b1bf7d154c0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_fe58ee331871d268516c5b5ef90e017a.setIcon(icon_7c05d885922b459a5431b1bf7d154c0f);
+        
+    
+        var popup_d85b814903b30fa0ac81675e5de6900e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_230adf457fe43ff4fe2aa4220c20ffd9 = $(`<div id="html_230adf457fe43ff4fe2aa4220c20ffd9" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_d85b814903b30fa0ac81675e5de6900e.setContent(html_230adf457fe43ff4fe2aa4220c20ffd9);
+        
+
+        marker_fe58ee331871d268516c5b5ef90e017a.bindPopup(popup_d85b814903b30fa0ac81675e5de6900e)
+        ;
+
+        
+    
+    
+            marker_fe58ee331871d268516c5b5ef90e017a.bindTooltip(
+                `<div>
+                     STAR LIGHT HOME DAY CARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f90ea383fd1b1a6d1c935cff5f1af54 = L.marker(
+                [36.4208237, -79.00289101683552],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_45031f8faa8053b8c10b04063b60ccc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8f90ea383fd1b1a6d1c935cff5f1af54.setIcon(icon_45031f8faa8053b8c10b04063b60ccc3);
+        
+    
+        var popup_1d8af20983fda534f2f3838b8bb7d2c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44ae5c5356e538edb2e6ec8ccde716fb = $(`<div id="html_44ae5c5356e538edb2e6ec8ccde716fb" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_1d8af20983fda534f2f3838b8bb7d2c7.setContent(html_44ae5c5356e538edb2e6ec8ccde716fb);
+        
+
+        marker_8f90ea383fd1b1a6d1c935cff5f1af54.bindPopup(popup_1d8af20983fda534f2f3838b8bb7d2c7)
+        ;
+
+        
+    
+    
+            marker_8f90ea383fd1b1a6d1c935cff5f1af54.bindTooltip(
+                `<div>
+                     STORIES CREEK ELEMENTARY SCHOOL AGE CARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41305abe143d2e52e84a39e23e8cd3a1 = L.marker(
+                [36.4254657, -78.9269419],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_15cf75f162681d5257b885881b703cf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_41305abe143d2e52e84a39e23e8cd3a1.setIcon(icon_15cf75f162681d5257b885881b703cf6);
+        
+    
+        var popup_09f069a86d1618a7995423e7ca44a6b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7eb168647c5c3836d2671d4c2383f374 = $(`<div id="html_7eb168647c5c3836d2671d4c2383f374" style="width: 100.0%; height: 100.0%;">Child Care Center</div>`)[0];
+            popup_09f069a86d1618a7995423e7ca44a6b0.setContent(html_7eb168647c5c3836d2671d4c2383f374);
+        
+
+        marker_41305abe143d2e52e84a39e23e8cd3a1.bindPopup(popup_09f069a86d1618a7995423e7ca44a6b0)
+        ;
+
+        
+    
+    
+            marker_41305abe143d2e52e84a39e23e8cd3a1.bindTooltip(
+                `<div>
+                     THE ARK LEARNING CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56c84e87e3a952460bf33cc71474d323 = L.marker(
+                [36.3999738, -78.9800563],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_31f231daf7ebc72fcbd65e9cb8127c43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_56c84e87e3a952460bf33cc71474d323.setIcon(icon_31f231daf7ebc72fcbd65e9cb8127c43);
+        
+    
+        var popup_6d04cc605b3580fb882dff3109229c69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06aa3a742725f75eca79cca8e74e3341 = $(`<div id="html_06aa3a742725f75eca79cca8e74e3341" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_6d04cc605b3580fb882dff3109229c69.setContent(html_06aa3a742725f75eca79cca8e74e3341);
+        
+
+        marker_56c84e87e3a952460bf33cc71474d323.bindPopup(popup_6d04cc605b3580fb882dff3109229c69)
+        ;
+
+        
+    
+    
+            marker_56c84e87e3a952460bf33cc71474d323.bindTooltip(
+                `<div>
+                     TINY TUMMIES HOME DAYCARE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7acf1d1413591bca095bae79afed173a = L.marker(
+                [36.38265103956186, -78.957644301817],
+                {}
+            ).addTo(map_92a108062a8e2efea40fa92a79928d9a);
+        
+    
+            var icon_2c2b5b51f121ba6affdba0c89d4e656c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_7acf1d1413591bca095bae79afed173a.setIcon(icon_2c2b5b51f121ba6affdba0c89d4e656c);
+        
+    
+        var popup_6463101bd5fe0fe68f40a8e0f2fcc2fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90e44af9580b155a28cf77d934ee8e33 = $(`<div id="html_90e44af9580b155a28cf77d934ee8e33" style="width: 100.0%; height: 100.0%;">Family Child Care Home</div>`)[0];
+            popup_6463101bd5fe0fe68f40a8e0f2fcc2fd.setContent(html_90e44af9580b155a28cf77d934ee8e33);
+        
+
+        marker_7acf1d1413591bca095bae79afed173a.bindPopup(popup_6463101bd5fe0fe68f40a8e0f2fcc2fd)
+        ;
+
+        
+    
+    
+            marker_7acf1d1413591bca095bae79afed173a.bindTooltip(
+                `<div>
+                     TRACY'S FUN LAND
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
