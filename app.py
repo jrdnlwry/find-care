@@ -1,5 +1,5 @@
 from asyncio.constants import SENDFILE_FALLBACK_READBUFFER_SIZE
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 from flask import send_file
 import pandas as pd
 import re
@@ -10,7 +10,8 @@ return a list of cities sorted ABC ->
 return a set of 10 cities per div / column
 """
 
-app = Flask(__name__)
+# app = Flask(__name__)
+app = Flask(__name__, static_folder='static') 
 
 # global data variable
 dataDoc = pd.read_csv("static/data/childDataLatLong.csv")
@@ -33,6 +34,11 @@ def home():
 
     return render_template("home.html")
 
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 
 # INDEX PAGE
