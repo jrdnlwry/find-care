@@ -1,0 +1,7 @@
+User-agent: AhrefsBot 
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+Sitemap: https://www.findcare.io/sitemap.xml
